@@ -1,0 +1,150 @@
+/* Variáveis */
+:root{
+    --lilas: #033f5a;
+    --azul: #3DC3B6;
+    --azulEscuro: #1B2D51;
+    --bgColor: #F5F5F5;
+    --cinza: #D4D5DD;
+}
+
+/* Fontes */
+@font-face {
+    font-family: 'projectFont';
+    src: url(../fonts/Aldrich-Regular.ttf);
+}
+
+/* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos básicos */
+body {
+    background-color: var(--bgColor);
+}
+
+* {
+    font-family: projectFont;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* Desktop */
+section {
+    width: 100%;
+    margin: auto;
+}
+
+section nav {
+    background-color: var(--lilas);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+section nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section nav ul li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+section nav ul li a {
+    text-decoration: none;
+}
+
+section nav ul li img {
+    display: none;
+}
+
+section nav ul li p {
+    display: inline;
+    color: white;
+    font-size: 12pt;
+}
+
+section #resposta {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
+
+
+section #resposta .categoria .titulo {
+    margin: 0 15px;
+}
+
+section #resposta .categoria .browserGames {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+section #resposta .categoria .browserGames a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+section #resposta .categoria .browserGames .browserGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 15px;
+}
+
+section #resposta .categoria .browserGames .browserGame .imagem {
+    width: 250px;
+    height: 300px;
+}
+
+section #resposta .categoria .browserGames .browserGame .imagem img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+section #resposta .categoria .browserGames .browserGame #nome {
+    color: var(--azulEscuro);
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+section #resposta .categoria .browserGames .browserGame #categoria {
+    color: var(--lilas);
+    margin-top: 4px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 0;
+    background-color: var(--lilas);
+    width: 100%;
+}
+
+footer p {
+    font-size: 12pt;
+    color: white;
+    padding: 10px;
+}
